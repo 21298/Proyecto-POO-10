@@ -38,7 +38,6 @@ public class Display {
                     System.out.println("ERROR: escogio un rol indefinido\nIntente de nuevo ");    
                     continuar = true;
         }
-
         }
         }
     
@@ -77,12 +76,25 @@ public class Display {
             return opcion;      
     }
     
-    public void registro(){
+    public String[] registro(){
+        String[] paciente = new String[6];
         System.out.println("Ingrese nombre completo del paciente");
-        String nombre = stringscan.nextLine();
+        paciente[0]= stringscan.nextLine(); //String nombre
+        System.out.println("Ingrese DPI del paciente");
+        paciente[1] = stringscan.nextLine();
+        System.out.println("Ingrese tipo de sangre del paciente");
+        paciente[2] = stringscan.nextLine();
         System.out.println("Ingrese diagnostico");
-        String diagnostico = stringscan.nextLine();
-        System.out.println("Nombre: " + nombre +"\nDiagnostico: " + diagnostico);
+        paciente[3] = stringscan.nextLine();
+        System.out.println("Ingrese persona en caso de emergenica");
+        paciente[4] = stringscan.nextLine();
+        System.out.println("Ingrese numero telefonico persona emergencia");
+        paciente[5] = stringscan.nextLine();
+        
+        System.out.println("\n\nNombre: "+paciente[0]+"\nDPI: "+paciente[1]+"\nSangre: "+paciente[2] +"\ndiagnostico: "+paciente[3]+
+                "\nContacto de emergencia :"+paciente[4]+"\nTelefono :"+paciente[5]+"\n\n");
+        return paciente;
+
     }
     
 }
