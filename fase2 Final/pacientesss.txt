@@ -1,0 +1,1 @@
+Nombre;DPI;Edad;Sangre;Diagnostico;Contacto;Telefono;Cama
