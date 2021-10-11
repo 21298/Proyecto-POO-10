@@ -1,0 +1,14 @@
+1. Ya que el uso de herencia es necesario, como nuestro proyecto
+consta de un programa para un hospital (especificamente el IGSS)
+se necesitan las clases de "paciente" y "medicación".
+
+En la clase "medicación" interactua el doctor como referente para
+asignar los medicamentos que el paciente necesite, por ende el doctor
+se podría decir que es la clase madre del hospital. Y como herencia
+se puede implementar el usuario de "Enfermero" ya que tiene 
+la mayoría de responsabilidades del doctor y alguna extras, como
+lo es:
+a) cuidado de paciente
+b) control del paciente
+etc.
+
