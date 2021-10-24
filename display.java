@@ -119,10 +119,13 @@ public class display {
     /** 
      * @param a
      */
+    
+    }
     public void print(String a){
         System.out.println(a);
         
        }
+    
        
        /** 
         * @return String
