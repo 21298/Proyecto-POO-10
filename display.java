@@ -197,6 +197,7 @@ public class display {
     
     
     public int enfermero() throws IOException{
+        
         int opcion = 0;
         opcion = Integer.parseInt(Input("----------------------\n"
                        + "-BIENVENIDO ENFERMERO-\n"
@@ -214,7 +215,7 @@ public class display {
                 getPacientes();
                 break;
             case 3:
-                ControlMedico();
+                controlMedico();
                 break;
             
             case 4:
@@ -230,64 +231,41 @@ public class display {
         return opcion;
     }
     
-    public void ControlMedico(){
-        System.out.println("");
-        System.out.println("--------------Información Medicinal------------");
-        boolean continuar = true;
-        while(continuar){
-            System.out.println("");
-            System.out.println("--- De que medicamento quiere conocer información");    
-            System.out.println("1. Acetaminofén");
-            System.out.println("2. Aspirina");
-            System.out.println("3. Amoxicilina");
-            System.out.println("4. Ibuprofeno");
-            System.out.println("5. Aspirina");
-            System.out.println("6. Regresar");
+    public int controlMedico(){
+        int opcion = 0;
+        opcion = Integer.parseInt(Input("-------------------\n"
+                       + "-ESTE ES EL CONTROL MEDICO-\n"
+                       + "-------------------\n"
+                       + "¿Que medicina quiere conocer?\n"
+                       + "1. Acetaminofén\n"
+                       + "2. Aspirina\n"
+                       + "3. Amoxicilina\n"
+                       + "4. Ibuprofeno\n"
+                       + "5. Diclofenaco\n"
+                       + "6. Regresar"));
+        switch(opcion){
+            case 1 -> JOptionPane.showMessageDialog(null, "El acetaminofén se usa para aliviar el dolor leve a dolor moderado desde dolores de cabeza, dolores musculares, "
+                        + "\nperíodos menstruales,resfriados y dolores de garganta, dolor de muelas dolores de espalda, reacciones a las vacunas, "
+                        + "\ny para reducir fiebre, Se debe tomar cada 8 horas.");
+            case 2 -> JOptionPane.showMessageDialog(null, "La aspirina prescripta se usa para aliviar los síntomas de la artritis reumatoide (un tipo de artritis causada por "
+                        + "\nla inflamación del revestimiento de las articulaciones), osteoartritis (un tipo de artritis causada por el desprendimiento "
+                        + "\ndel revestimiento de las articulaciones) y fuertes dolores de cabeza, Tomar cada 4 a 5 horas");
+            case 3 -> JOptionPane.showMessageDialog(null, "La amoxicilina se usa para tratar algunas infecciones provocadas por bacterias como la neumonía; "
+                        + "\nla bronquitis (infección de las vías respiratorias que van a los pulmones); e infecciones de los oídos, nariz, "
+                        + "\ngarganta, del tracto urinarioy la piel, Se toma una cada 8 horas.");
+            case 4 -> JOptionPane.showMessageDialog(null, "El ibuprofeno de venta con receta se usa para aliviar el dolor, la sensibilidad, la inflamación y la rigidez ocasionados "
+                        + "\npor la osteoartritis (artritis debida a la degradación del revestimiento de las articulaciones) y "
+                        + "\nla artritis reumatoide (artritis debida a la inflamación del revestimiento de las articulaciones), Se debe tomar una cada 6 horas.");
             
-            int Medic = scan.nextInt();
-            switch(Medic){
-                case 1 -> {
-                    System.out.println("--- Información sobre acetaminofen ---");
-                    System.out.println("");
-                    System.out.println("El acetaminofén se usa para aliviar el dolor leve a dolor moderado desde dolores de cabeza, dolores musculares, \nperíodos menstruales,resfriados y dolores de garganta, dolor de muelas dolores de espalda, reacciones a las vacunas, \ny para reducir fiebre, Se debe tomar cada 8 horas.");
-                }
-                case 2 -> {
-                    System.out.println("--- Información sobre Aspirina ---");
-                    System.out.println("");
-                    System.out.println("La aspirina prescripta se usa para aliviar los síntomas de la artritis reumatoide (un tipo de artritis causada por \nla inflamación del revestimiento de las articulaciones), osteoartritis (un tipo de artritis causada por el desprendimiento \ndel revestimiento de las articulaciones) y fuertes dolores de cabeza, Tomar cada 4 a 5 horas");
-                }
-                case 3 -> {
-                    System.out.println("--- Información sobre Amoxicilina ---");
-                    System.out.println("");
-                    System.out.println("La amoxicilina se usa para tratar algunas infecciones provocadas por bacterias como la neumonía; \nla bronquitis (infección de las vías respiratorias que van a los pulmones); e infecciones de los oídos, nariz, \ngarganta, del tracto urinarioy la piel, Se toma una cada 8 horas.");
-                }
-                case 4 -> {
-                    System.out.println("--- Información sobre Ibuprofeno ---");
-                    System.out.println("");
-                    System.out.println("El ibuprofeno de venta con receta se usa para aliviar el dolor, la sensibilidad, la inflamación y la rigidez ocasionados \npor la osteoartritis (artritis debida a la degradación del revestimiento de las articulaciones) y \nla artritis reumatoide (artritis debida a la inflamación del revestimiento de las articulaciones), Se debe tomar una cada 6 horas.");
-                }
-                case 5 -> {
-                    System.out.println("--- Información sobre Diclofenaco ---");
-                    System.out.println("");
-                    System.out.println("se usan para aliviar el dolor, la sensibilidad, la inflamación y la rigidez causada por la osteoartritis (artritis causada por \nun daño en el revestimiento de las articulaciones) y artritis reumatoide (artritis causada por \nla inflamación del revestimiento de las articulaciones), tomar 3 tabletas al día.");
-                }
-                case 6 -> {
-                    System.out.println("Regresar");
-                    System.out.println("");
-                    
-                }
-                default -> {
-                    System.out.println("ERROR: escogio un rol indefinido\nIntente de nuevo ");    
-                    continuar = true;
-                }
+            case 5 -> JOptionPane.showMessageDialog(null, "Se usa para aliviar el dolor, la sensibilidad, la inflamación y la rigidez causada por la osteoartritis (artritis causada por "
+                        + "\nun daño en el revestimiento de las articulaciones) y artritis reumatoide (artritis causada por "
+                        + "\nla inflamación del revestimiento de las articulaciones), tomar 3 tabletas al día.");
+            case 6 -> opcion = 6;
+                
+            default -> JOptionPane.showMessageDialog(null, "Opcion Invalida");
         }
-        }
-        }
+        
+        return opcion;
+    }
     
-    
-    
-    
-    
-    
-
 }
