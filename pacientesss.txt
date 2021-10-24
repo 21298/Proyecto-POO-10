@@ -1,9 +1,10 @@
-Javier,123454654534,A+,Le gusta el pito
-Nombre,DPI,Sangre,Diagnostico
-Angel,32435443,B,lo mismo que javier
-Nombre,DPI,Sangre,Diagnostico
-Alejandro,13243547654,H,hueco0t
-Nombre,DPI,Sangre,Diagnostico
-Angel,1324354645,A+,Fiebre
+Sebastian|874564810101|O+|Dolor de cabeza|Aspirina|8 dias|3 veces|8 horas
 Nombre|DPI|Sangre|Diagnostico|Medicina|Tiempo|Diarias|Intervalos
-ASDFDG|ASDSFD|ADSF|ASDSF|ASDS|ASDS|ADSF|ASDS
+Sebastian Jose Solorzano Perez|0101|A+|Covid|SS|5|2|10
+Nombre|DPI|Sangre|Diagnostico|Medicina|Tiempo|Diarias|Intervalos
+Sebastian |3558878270101|A+|Dolor de estomago|Aspirina|5|3|
+Fecha|Nombre|DPI|Sangre|Diagnostico|Medicina|Tiempo|Diarias|Intervalos
+JavierPrado|435466534|A+|fiebre|Aspirina forte|10 dias|2 veces al dia|10
+Fecha|Nombre|DPI|Sangre|Diagnostico|Medicina|Tiempo|Diarias|Intervalos
+null|null|null|null|null|null|null|null|null
+Sexy|Sexy1|1234|sads|as|a|ds|sds|sa

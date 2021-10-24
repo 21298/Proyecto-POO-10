@@ -10,15 +10,13 @@
 *Programa utilizado: Visual Studio Code y Netbeans
 *Clase: camas para asignar una cama al paciente
 */
-public class camas {
+
+public class camas extends paciente{
     private String nombre;
     camas disponible = null;
     camas(String[] pacientes){
         nombre = pacientes[0];
     }
-
-   
-    
     
     /** 
      * @return camas
@@ -39,7 +37,6 @@ public class camas {
         disponible = null; 
     }
     
-    
     /** 
      * @return String[]
      */
@@ -48,7 +45,6 @@ public class camas {
         pacientes[0] = nombre; 
         return pacientes;
     }
-
     
     /** 
      * @return String

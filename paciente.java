@@ -10,13 +10,26 @@
 *Programa utilizado: Visual Studio Code y Netbeans
 *Clase: paciente aqui se lleva acabo la asignacion de informacion de los pacientes
 */
+
+import javax.swing.JOptionPane;
+
 public class paciente {
     private String name;
     private String DPI; 
     private String Sangre; 
-    private String Diagnostico; 
+    private String Diagnostico;
+    private String fecha;
+
+    public String getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(String fecha) {
+        this.fecha = fecha;
+    }
 
     public paciente(){
+        //super(nam, tim, ing, med, tims, ints);
         name = "";
         DPI = "";
         Sangre = "";
@@ -30,14 +43,12 @@ public class paciente {
         return name;
     }
 
-    
     /** 
      * @param name
      */
     public void setName(String name) {
         this.name = name;
     }
-
     
     /** 
      * @return String
@@ -46,7 +57,6 @@ public class paciente {
         return DPI;
     }
 
-    
     /** 
      * @param DPI
      */
@@ -75,13 +85,17 @@ public class paciente {
         return Diagnostico;
     }
 
-    
     /** 
      * @param Diagnostico
      */
     public void setDiagnostico(String Diagnostico) {
         this.Diagnostico = Diagnostico;
     }
-     
+    
+    public String Input(String text){
+        return JOptionPane.showInputDialog(text);
+   }
+
+    
 } 
 
