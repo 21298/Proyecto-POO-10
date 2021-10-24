@@ -1,0 +1,9 @@
+Javier,123454654534,A+,Le gusta el pito
+Nombre,DPI,Sangre,Diagnostico
+Angel,32435443,B,lo mismo que javier
+Nombre,DPI,Sangre,Diagnostico
+Alejandro,13243547654,H,hueco0t
+Nombre,DPI,Sangre,Diagnostico
+Angel,1324354645,A+,Fiebre
+Nombre|DPI|Sangre|Diagnostico|Medicina|Tiempo|Diarias|Intervalos
+ASDFDG|ASDSFD|ADSF|ASDSF|ASDS|ASDS|ADSF|ASDS
