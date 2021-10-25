@@ -9,3 +9,6 @@ Fecha|Nombre|DPI|Sangre|Diagnostico|Medicina|Tiempo|Diarias|Intervalos
 null|null|null|null|null|null|null|null|null
 Sexy|Sexy1|1234|sads|as|a|ds|sds|sa
 adsfdt|asdfg|dsfg|adsfgfh|adsfgfhg|asdff|asdfgf|asdfgfhg|asdfggh
+24/10/2020|Alehaandro|w4546543|A+|fiebre|aspirina|10 dias|1|12
+123243546|32454657|345676|dbfdf|frv|sfdbsd|sbdg|bdfbd|sdbdbf
+asdfdfsd|dsfdfs|dsfdgdf||fdgfdfsddsf|dsfdgdfs|dsfgf|adsfdgf|sadf|cama 1

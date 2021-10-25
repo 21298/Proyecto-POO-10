@@ -42,7 +42,9 @@ public class display {
         String tiempo = Input("Por cuanto tiempo tomará el medicamento: ");
         String times = Input("Cuantas veces al día tomara el medicamento: ");
         String intervals = Input("Cada cuantas horas ingerirá el medicamento: ");
-                
+        
+        asignarCama();
+        
         paciente paciente = new paciente();
         paciente.setFecha(fecha);
         paciente.setName(name);
@@ -67,8 +69,8 @@ public class display {
                 archi.createNewFile();
                 archivo = new FileWriter("pacientesss.txt",true);
                 escritor = new PrintWriter(archivo);
-                escritor.println("Fecha|Nombre|DPI|Sangre|Diagnostico|Medicina|Tiempo|Diarias|Intervalos");
-                escritor.println(fecha+"|"+name+"|"+DPI+"|"+Sangre+"|"+Diagnostico+"|"+medicina+"|"+tiempo+"|"+times+"|"+intervals);
+                escritor.println("Fecha|Nombre|DPI|Sangre|Diagnostico|Medicina|Tiempo|Diarias|Intervalos|Cama");
+                escritor.println(fecha+"|"+name+"|"+DPI+"|"+Sangre+"|"+Diagnostico+"|"+medicina+"|"+tiempo+"|"+times+"|"+intervals+"|"+bed.get(a));
               
                 escritor.close();
                 archivo.close();
@@ -84,7 +86,7 @@ public class display {
                 
                 escritor = new PrintWriter(archivo);
                 
-                escritor.println(fecha+"|"+name+"|"+DPI+"|"+Sangre+"|"+Diagnostico+"|"+medicina+"|"+tiempo+"|"+times+"|"+intervals);
+                escritor.println(fecha+"|"+name+"|"+DPI+"|"+Sangre+"|"+Diagnostico+"|"+medicina+"|"+tiempo+"|"+times+"|"+intervals+"|"+bed.get(a));
                 escritor.close();
                 archivo.close();
             }
@@ -109,6 +111,7 @@ public class display {
             string+="Tiempo: "+listaMedicamento.get(i).getTime()+"\n";
             string+="Veces al dia: "+listaMedicamento.get(i).getTimes()+"\n";
             string+="Intervalos: "+listaMedicamento.get(i).getIntervals()+"\n";
+            string+="cama: "+bed.get(a);
             string+="--------------------\n";
             JOptionPane.showMessageDialog(null, string);
         }
@@ -267,5 +270,20 @@ public class display {
         
         return opcion;
     }
+    
+    int a = (int) (Math.random()*5);
+    ArrayList bed = new ArrayList();
+    
+    public void asignarCama(){
+        
+        bed.add("cama 1");
+        bed.add("cama 2");
+        bed.add("cama 3");
+        bed.add("cama 4");
+        bed.add("cama 5");  
+        //System.out.println("Se le a asignado: " + bed.get(a));
+        JOptionPane.showMessageDialog(null, "Se le ha asignado al paciente " + bed.get(a));
+    }
+    
     
 }
