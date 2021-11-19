@@ -13,17 +13,30 @@
 
 import java.io.*;
 import javax.swing.JOptionPane;
+import javax.swing.UIManager;
+import javax.swing.plaf.ColorUIResource;
+
 public class driver {
     /**
      * @param args the command line arguments
      * @throws java.io.IOException
      */
     public static void main(String[] args) throws IOException{
+        
+        UIManager UI = new UIManager();
+        UI.put("OptionPane.background", new ColorUIResoruce(200, 200, 200));
+        UI.put("Panel.background", new ColorUIResource(125, 125, 125));
         display d = new display();
         //d.directory();
         d.menuRol();
 
 }
+
+    private static class ColorUIResoruce {
+
+        public ColorUIResoruce(int i, int i0, int i1) {
+        }
+    }
 }
 /*
                 byte opcion;

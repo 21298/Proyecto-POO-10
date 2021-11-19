@@ -1,14 +1,7 @@
-Sebastian|874564810101|O+|Dolor de cabeza|Aspirina|8 dias|3 veces|8 horas
-Nombre|DPI|Sangre|Diagnostico|Medicina|Tiempo|Diarias|Intervalos
-Sebastian Jose Solorzano Perez|0101|A+|Covid|SS|5|2|10
-Nombre|DPI|Sangre|Diagnostico|Medicina|Tiempo|Diarias|Intervalos
-Sebastian |3558878270101|A+|Dolor de estomago|Aspirina|5|3|
-Fecha|Nombre|DPI|Sangre|Diagnostico|Medicina|Tiempo|Diarias|Intervalos
-JavierPrado|435466534|A+|fiebre|Aspirina forte|10 dias|2 veces al dia|10
-Fecha|Nombre|DPI|Sangre|Diagnostico|Medicina|Tiempo|Diarias|Intervalos
-null|null|null|null|null|null|null|null|null
-Sexy|Sexy1|1234|sads|as|a|ds|sds|sa
-adsfdt|asdfg|dsfg|adsfgfh|adsfgfhg|asdff|asdfgf|asdfgfhg|asdfggh
-24/10/2020|Alehaandro|w4546543|A+|fiebre|aspirina|10 dias|1|12
-123243546|32454657|345676|dbfdf|frv|sfdbsd|sbdg|bdfbd|sdbdbf
-asdfdfsd|dsfdfs|dsfdgdf||fdgfdfsddsf|dsfdgdfs|dsfgf|adsfdgf|sadf|cama 1
+
+19/11/2021|Angelito Figueroa|32435465789876|A+|Fiebre|Paracetamol|10 dias|3 veces al dia|8|cama 5
+19/11/2021|Abner Iván Camara Frontal|3243546576564|B-|Gripe|Salndrius|20 dias|2 veces al dia|12 horas|cama 5
+19/11/2021|Zuleima de García|23435465756453|A-|Enamorada de Abner|Inyeccion|5 dias|1 vez al dia|12|cama 5
+sadsdfbv|324rtregt|efsdfv|sfdg|esdv|sdvx|scd|3243|des|cama 2
+2132435|32454|32454|23546|2354|324354|324354|32454|324354|cama 5
+2133|232454|45sdfgf|dsfbv|fcbv|fdcbv|dfgcbv|fdcvv |dfbv|cama 5
