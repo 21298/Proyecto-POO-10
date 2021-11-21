@@ -27,8 +27,10 @@ public class display {
     private Scanner entrada;
     paciente[] paciente = new paciente[5];
     paciente P = new paciente();
+ 
     ArrayList<paciente> listaPaciente = new ArrayList();
     ArrayList<medicamento> listaMedicamento = new ArrayList();
+    ArrayList<paciente> pacientes = new ArrayList<>();
     
     public String Input(String text){
         return JOptionPane.showInputDialog(text);
@@ -54,7 +56,8 @@ public class display {
         paciente.setDPI(DPI);
         paciente.setSangre(Sangre);
         paciente.setDiagnostico(Diagnostico);
-        listaPaciente.add(paciente); 
+        listaPaciente.add(paciente);
+        pacientes.add(paciente);
         
         medicamento medica = new medicamento();
         medica.setMedicacion(medicina);
@@ -230,7 +233,7 @@ public class display {
                        + "2. Mostrar Pacientes\n"
                        + "3. Mostrar todos los pacientes\n"
                        + "4. Control Médico\n"
-                       + "5. Buscar por DPI"
+                       + "5. Buscar por DPI\n"
                        + "6. Regresar"));
         switch(opcion){
             case 1: // Registro paciente
@@ -297,7 +300,7 @@ public class display {
         return opcion;
     }
     
-        int a = (int) (Math.random()*5);
+        int a = (int) (Math.random()*15);
         ArrayList bed = new ArrayList();
     
     public void asignarCama(){
@@ -340,9 +343,25 @@ public class display {
     }
     
     public void buscarPorDPI(){
-        
+        JOptionPane.showMessageDialog(null,"Menu buscar paciente por DPI");
+                //(, "<html><p style =\"font-family:verdana; font: 10px; color:white \">Menu de pacientes por su DPI</p></html>");
+                        String dpi =DPI();
+                        if (!pacientes.isEmpty()) {
+                            for (paciente pacientes : pacientes) {
+                                if (dpi.equals(pacientes.getDPI())) {
+                                    pacientes.info();
+                                    
+                                }
+                            }
+                        }
+                        
+
     }
     
-    
-    
+        
+    public String DPI() {
+        System.out.println("Ingrese el No. DPI: ");
+                                
+        return stringscan.nextLine();
+    }
 }

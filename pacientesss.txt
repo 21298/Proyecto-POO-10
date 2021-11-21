@@ -1,0 +1,4 @@
+19/11/2021|Angelito Figueroa|32435465789876|A+|Fiebre|Paracetamol|10 dias|3 veces al dia|8|cama 5
+
+21/11/2021|Angel Gabriel Perez Figueroa|3715034674|A+|Feibre|Aspirina|10 dias|2 veces al dia|12 horas|cama 15
+21/11/2021|Leonel Messi|1234|A+|Gripe|Aspirina|2 dias|1 vez al dia|24 horas|cama 15
